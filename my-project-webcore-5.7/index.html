@@ -9,22 +9,27 @@
 <body>
 <div class="card">
     <div class="left">
-        <img src="bg.jpg" alt="background" class="bg">
+        <img src="/assets/images/bg.jpg" alt="background" class="bg">
         <button class="logo">
-            <img src="logo.svg" alt="logo">
+            <img src="assets/images/logo.svg" alt="logo">
         </button>
     </div>
     <div class="right">
         <h1>Get iintoo it today</h1>
         <p>There is no charge or obligation upon registration</p>
         <div class="social-buttons">
-            <button class="btn fb">Facebook</button>
-            <button class="btn ln">LinkedIn</button>
+            <button class="btn fb">
+                <img class="icons" src="assets/images/facebook.svg" alt="FB"> <span>Facebook</span>
+            </button>
+            <button class="btn ln">
+                <img class="icons" src="assets/images/linkedin.svg" alt="LN"><span>Linked in</span>
+            </button>
         </div>
         <div class="divider"><span>OR</span></div>
         <div class="form-fields">
-            <input type="email" placeholder="Email" />
-            <input type="tel" placeholder="Phone" />
+            <label class="email"><input type="email"><span>Email</span></label>
+            <label class="phone"><input type="phone"><span>Phone</span></label>
+
         </div>
 
         <div class="investor-type">
@@ -33,21 +38,28 @@
                 <label class="radio">
                     <input type="radio" name="type" checked>
                     <span>Individual</span>
-                    <div class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
+                    <div class="information">i</div>
+                    <div class="tooltip">
+                    I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
+                    </div>
+                    </span>
                 </label>
                 <label class="radio">
                     <input type="radio" name="type">
                     <span>Business</span>
+                    <div class="information">i</div>
                     <div class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
                 </label>
                 <label class="radio">
                     <input type="radio" name="type">
                     <span>IRA</span>
+                    <div class="information">i</div>
                     <div class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
                 </label>
                 <label class="radio">
                     <input type="radio" name="type">
                     <span>Trust</span>
+                    <div class="information">i</div>
                     <div class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
                 </label>
             </div>

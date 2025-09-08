@@ -69,8 +69,20 @@ body {
         font-size: 14px;
     }
 
-    .fb { background: #3b5998; color: white; }
-    .ln { background: #0077b5; color: white; }
+    .fb {
+        background: #3b5998;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ln { background: #0077b5;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .create { background: #2563eb; color: white; margin-top: 20px; }
     .social-buttons {
         display: flex;
@@ -208,11 +220,10 @@ body {
     }
 
     .radio {
-        position: relative;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        cursor: pointer;
+        align-items: center;
+        gap: 8px;
+        position: relative;
     }
 
     .radio input {
@@ -243,15 +254,16 @@ body {
     .tooltip {
         display: none;
         position: absolute;
-        top: 35px;
+        top: 40px;
         left: 0;
-        width: 200px;
+        width: 220px;
         background: #f9f9f9;
         color: #333;
         padding: 8px;
         font-size: 12px;
         border: 1px solid #ccc;
         border-radius: 6px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         z-index: 10;
     }
 
@@ -285,4 +297,72 @@ body {
 .terms-text a {
     color: #2563eb;
     text-decoration: underline;
+}
+.info {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+    stroke: #2563eb;
+    vertical-align: middle;
+}
+.info:hover .tooltip {
+    display: block;
+}
+.icons{
+    width: 20px;
+    margin-right: 4px;
+}
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.email{
+    position: relative;
+
+}
+
+.email span {
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    color: grey;
+    font-size: 16px;
+}
+.email input{
+    height: 50px;
+    padding: 8px;
+}
+.email input:focus {
+    outline: none;
+    border-left: 2px solid #2563eb;
+}
+.phone{
+    position: relative;
+
+}
+
+.phone span {
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    color: grey;
+    font-size: 16px;
+}
+.phone input{
+    height: 50px;
+    padding: 8px;
+}
+.phone input:focus {
+    outline: none;
+    border-left: 2px solid #2563eb;
 }
